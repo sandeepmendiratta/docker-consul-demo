@@ -49,3 +49,11 @@ An example of query response can be seen in [query_execution.sample.json](query_
 ```
 $ curl --request GET http://127.0.0.1:8501/v1/query
 ```
+ consul members
+ consul monitor
+ ```
+remove and add
+ ```
+curl -X PUT -d '{"Datacenter": "dc1", "Node": "amazon", "Address": "www.amazon.com", "Service": {"Service": "shop", "Port": 80}}' http://127.0.0.1:8500/v1/catalog/register
+curl -X PUT -d '{"Datacenter": "dc1", "Node": "amazon"}'
+```
